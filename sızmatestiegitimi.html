@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html>
+    
+
+<head>
+    <title>Siber GÃ¼venlik UzmanlÄ±ÄŸÄ± EÄŸitimi</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=D4yEH9BCBmEYWIcKI6sqOY8b-KK1eZ522I2cgPPdNr2UKdqW3b8I5fciP8PflLQALKAVEmgmOgytzbbkVWbpqg" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9iaWdleWVhY2FkZW15LmNvbS50ci9kZW5lbS5odG1s"/><style>
+        body {
+            height: calc(100% - 20px);
+            width: calc(100% - 20px);
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            background: #f2f2f2;
+            color: rgba(0, 0, 0, .87);
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .accordion {
+            margin: auto;
+            width: 400px;
+        }
+        
+        .accordion input {
+            display: none;
+        }
+        
+        .box {
+            position: relative;
+            background: white;
+            height: 64px;
+            transition: all .15s ease-in-out;
+        }
+        
+        .box::before {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            pointer-events: none;
+            box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+        }
+        
+        header.box {
+            background: #3d1ec5;
+            z-index: 100;
+            cursor: initial;
+            box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px -2px rgba(0, 0, 0, .12), 0 2px 4px -4px rgba(0, 0, 0, .24);
+        }
+        
+        header .box-title {
+            margin: 0;
+            font-weight: normal;
+            font-size: 16pt;
+            color: white;
+            cursor: initial;
+        }
+        
+        .box-title {
+            width: calc(100% - 40px);
+            height: 64px;
+            line-height: 64px;
+            padding: 0 20px;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        .box-content {
+            width: calc(100% - 40px);
+            padding: 30px 20px;
+            font-size: 11pt;
+            color: rgba(0, 0, 0, .54);
+            display: none;
+        }
+        
+        .box-close {
+            position: absolute;
+            height: 64px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+            display: none;
+        }
+        
+        input:checked+.box {
+            height: auto;
+            margin: 16px 0;
+            box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 12px rgba(0, 0, 0, .32);
+        }
+        
+        input:checked+.box .box-title {
+            border-bottom: 1px solid rgba(0, 0, 0, .18);
+        }
+        
+        input:checked+.box .box-content,
+        input:checked + .box .box-close {
+            display: inline-block;
+        }
+        
+        .arrows section .box-title {
+            padding-left: 44px;
+            width: calc(100% - 64px);
+        }
+        
+        .arrows section .box-title:before {
+            position: absolute;
+            display: block;
+            content: '\203a';
+            font-size: 18pt;
+            left: 20px;
+            top: -2px;
+            transition: transform .15s ease-in-out;
+            color: rgba(0, 0, 0, .54);
+        }
+        
+        input:checked + section.box .box-title:before {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav class="accordion arrows">
+        <header class="box">
+            <label for="acc-close" class="box-title">Siber GÃ¼venlik UzmanlÄ±ÄŸÄ± EÄŸitimi</label>
+        </header>
+        <input type="radio" name="accordion" id="cb1" />
+        <section class="box">
+            <label class="box-title" for="cb1">Hedef Sistemler HakkÄ±nda Bilgi Toplama</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+                <h4>Aktif / Pasif Bilgi Toplama Nedir?</h4>
+                <h4>Bilgi Toplama Teknikleri</h4>
+                <h4>Whois - Subdomain KeÅŸfi vb</h4>
+                <h4>Ãœcretli Zafiyet Tarama AraÃ§larÄ±</h4>
+                <h4>Shodan</h4>
+                <h4>Pipl KullanÄ±mÄ±</h4>
+                <h4>Leaked Source KullanÄ±mÄ±</h4>
+                <h4>Pastebin KullanÄ±mÄ±</h4>
+                <h4>Cyberthint KullanÄ±mÄ±</h4>
+                <h4>Ä°nternet AriÅŸivi KullanÄ±mÄ± (Archive.org vb.)</h4>
+                <h4>Web Application Firewall (WAF) Tespiti</h4>
+                <h4>Kurum Ã‡alÄ±ÅŸanlarÄ±nÄ±n Mail Adreslerinin Tespiti</h4>
+                <h4>Underground Hacking ForumlarÄ±ndan Bilgi Toplama</h4>
+                <h4>Mail Yolu ile Yerel IP Blok Tespiti</h4>
+
+        </section>
+        <input type="radio" name="accordion" id="cb2" />
+        <section class="box">
+            <label class="box-title" for="cb2">Nmap KullanÄ±mÄ±</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+               <h4>Open - Closed</h4>
+               <h4>Filterd â€“ Unfiltered </h4>
+               <h4>Open - Filtered vb KavramlarÄ± </h4>
+               <h4>FIN TaramasÄ±</h4>
+               <h4>TCP Port TaramasÄ±</h4>
+               <h4>UDP Port TaramasÄ±/h4>
+               <h4>Version Tespiti </h4>
+               <h4>OS Tespiti</h4>
+               <h4>Sahte IP Adresleri ile Port Tarama </h4>
+               <h4>Port AralÄ±ÄŸÄ± Belirleme</h4>
+               <h4>Scriptlerin KullanÄ±mÄ± </h4>
+
+
+        </section>
+        <input type="radio" name="accordion" id="cb3" />
+        <section class="box">
+            <label class="box-title" for="cb3">Zafiyet Tarama</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+                <h4>Zafiyet TanÄ±mÄ± ve Ã‡eÅŸitleri</h4>
+                <h4>Zafiyet Tarama Nedir?</h4>
+                <h4>Zafiyet Tarama AraÃ§larÄ±</h4>
+                <h4>AÄŸ ve Web Zafiyet Tarama AraÃ§larÄ±</h4>
+                <h4>Zafiyetlerin DoÄŸrulanmasÄ±</h4>
+                <h4>CVE â€“ EDB vb. KÄ±saltmalarÄ±n AÃ§Ä±lÄ±mlarÄ± & KullanÄ±mÄ±
+              
+        </section>
+
+    </section>
+    <input type="radio" name="accordion" id="cb4" />
+    <section class="box">
+        <label class="box-title" for="cb4">Ãœcretli Zafiyet Tarama AraÃ§larÄ±</label>
+        <label class="box-close" for="acc-close"></label>
+        <div class="box-content">
+            <h4>Netsparker</h4>
+            <h4>Acunetix</h4>
+            <h4>Nexpose</h4>
+            <h4>Nessus</h4>
+            <h4>CoreImpact</h4>
+    </section>
+    
+    <input type="radio" name="accordion" id="cb5" />
+    <section class="box">
+        <label class="box-title" for="cb5">Ãœcretli Zafiyet Tarama AraÃ§larÄ± 2</label>
+        <label class="box-close" for="acc-close"></label>
+        <div class="box-content">
+            <h4>OpenVas</h4>
+            <h4>Nikto </h4>
+            <h4>Uniscani/h4>
+            <h4>Risk DeÄŸerlendirmesi</h4>
+            
+    </section>
+    
+    <input type="radio" name="accordion" id="cb6" />
+    <section class="box">
+        <label class="box-title" for="cb6">Hedef Sistemlere SÄ±zma (Exploitation) GiriÅŸimleri ve SÃ¼reÃ§leri</label>
+        <label class="box-close" for="acc-close"></label>
+        <div class="box-content">
+            <h4>Exploit Nedir?</h4>
+            <h4>Exploit Ã‡eÅŸitleri
+            </h4>Zeroday (SÄ±fÄ±rÄ±ncÄ± GÃ¼n) Exploitler<h4>
+            <h4>Local (Yerel) Exploitler<h4>
+            <h4>Remote (Uzak) Exploitler</h4>
+            <h4>Manuel Exploit KullanÄ±mÄ±</h4>
+            <h4>Metasploit Nedir?/h4>
+            <h4>Metasploit ModÃ¼lleri</h4>           
+    </section>
+ 
+    <input type="radio" name="accordion" id="cb7" />
+    <section class="box">
+        <label class="box-title" for="cb7">Auxilary â€“ Encoder - Scanner â€“ Nops â€“ Payload</label>
+        <label class="box-close" for="acc-close"></label>
+        <div class="box-content">
+            <h4>Payload Nedir?</h4>        
+            <h4>Payload Ã‡eÅŸitleri</h4>
+            <h4>Reverse-Shell & Bind-Shell FarklarÄ±</h4>
+            <h4>PayloadlarÄ±n Åifrelenmesi</h4>
+            <h4>Metasploit Kullanarak Exploitation (SÄ±zma)</h4>
+
+
+    </section>
+    <input type="radio" name="accordion" id="cb8" />
+    <section class="box">
+        <label class="box-title" for="cb8">Hedef Sistemlerde Post Exploitation (SÄ±zma SonrasÄ±) SaldÄ±rÄ±lar</label>
+        <label class="box-close" for="acc-close"></label>
+        <div class="box-content">
+            <h4>Yetki YÃ¼kseltme SaldÄ±rÄ±larÄ±</h4> 
+            <h4>BaÅŸka Bir Uygulamaya BulaÅŸmak</h4>  
+            <h4>Bellek DÃ¶kÃ¼mÃ¼ Alarak Parola Ä°nceleme</h4>    
+            <h4>Uzak MasaÃ¼stÃ¼ BaÄŸlantÄ±sÄ± BaÅŸlatmak</h4>
+            <h4>Hedefin CanlÄ± Oturumuna GeÃ§iÅŸ</h4>
+            <h4>Ä°z Temizleme</h4>
+            <h4>Trafik Dinleme (Packet Sniffing)</h4>
+            <h4>Ekran GÃ¶rÃ¼ntÃ¼sÃ¼ Yakalama</h4>
+            <h4>Keylogger KullanÄ±mÄ±</h4>
+            <h4>Mikrofon KaydÄ±</h4>
+            <h4>Dosya YÃ¼kleme / Ä°ndirme Aktivetleri</h4>
+    </section>
+    <input type="radio" name="accordion" id="cb9" />
+    <section class="box">
+        <label class="box-title" for="cb9">Hedef Sistemlerde Post Exploitation (SÄ±zma SonrasÄ±) SaldÄ±rÄ±lar</label>
+        <label class="box-close" for="acc-close"></label>
+        <div class="box-content">
+          <h4>CAM tablosu saldÄ±rÄ±sÄ±</h4>
+          <h4>CDP ProtokolÃ¼ saldÄ±rÄ±sÄ±</h4>
+          <h4>DHCP protokolÃ¼ saldÄ±rÄ±sÄ±</h4>
+          <h4>ARP protokolÃ¼ saldÄ±rÄ±sÄ±</h4>
+          <h4>Spoofing saldÄ±rÄ±sÄ±</h4>
+          <h4>VTP protokolÃ¼ saldÄ±rÄ±sÄ±</h4>
+          <h4>VLAN saldÄ±rÄ±sÄ±</h4>
+          <h4>HSRP saldÄ±rÄ±sÄ±</h4> <h4></h4>
+          <h4>SNMP saldÄ±rÄ±sÄ±</h4>
+         
+    </section>
+    <input type="radio" name="accordion" id="cb10" />
+    <section class="box">
+        <label class="box-title" for="cb10">Parola/Åifre KÄ±rma SaldÄ±rÄ±larÄ±</label>
+        <label class="box-close" for="acc-close"></label>
+        <div class="box-content">
+          <h4>Parola ve Åifre kavramÄ±</h4>
+          <h4>Kuruma Uygun Wordlist HazÄ±rlanmasÄ±</h4>
+          <h4>Windows LM/NTLM ParolalarÄ±nÄ± KÄ±rmak</h4>
+          <h4>Arama MotorlarÄ±ndan HASH SonuÃ§larÄ±nÄ± Bulma</h4>
+          <h4>Linux KullanÄ±cÄ± ParolalarÄ±nÄ± KÄ±rmak</h4>
+          <h4>Cain & Abel AracÄ± KullanÄ±larak Parola KÄ±rma </h4>
+          <h4>John the Ripper AracÄ± KullanÄ±larak Parola KÄ±rma</h4>
+          <h4>SMB Servisine YÃ¶nelik Parola SaldÄ±rÄ±sÄ± </h4>
+          <h4>RDP Servisine YÃ¶nelik Parola SaldÄ±rÄ±sÄ± </h4>
+          <h4>SSH Servisine YÃ¶nelik Parola SaldÄ±rÄ±sÄ±</h4>
+          <h4>MySQL Servisine YÃ¶nelik Parola SaldÄ±rÄ±sÄ±</h4>
+          <h4>MSSQL Servisine YÃ¶nelik Parola SaldÄ±rÄ±sÄ±</h4>
+          <h4>FTP Servisine YÃ¶nelik Parola SaldÄ±rÄ±sÄ± </h4>
+          <h4>HTTP Servisine YÃ¶nelik Parola SaldÄ±rÄ±sÄ± </h4>
+          <h4>Telnet Servisine YÃ¶nelik Parola SaldÄ±rÄ±sÄ± </h4>
+    </section>
+
+    <input type="radio" name="accordion" id="cb11" />
+    <section class="box">
+        <label class="box-title" for="cb11">Yerel AÄŸ Zehirleme SaldÄ±rÄ±larÄ±</label>
+        <label class="box-close" for="acc-close"></label>
+        <div class="box-content">
+          <h4>TCP/IP AÄŸlarda Araya Girme ve Oturuma MÃ¼dahale</h4>
+          <h4>Ã‡eÅŸitli Oturum MÃ¼dahale YÃ¶ntemle</h4>
+          <h4>ARP Spoofing</h4>
+          <h4>IP Spoofing</h4>
+          <h4>DNS Spoofing </h4>
+          <h4>MAC Flooding</h4>
+          <h4>Cain & Abel</h4>
+          <h4>HTTP Oturumuna MÃ¼dahale </h4>
+         
+    </section>
+    <input type="radio" name="accordion" id="cb12" />
+    <section class="box">
+        <label class="box-title" for="cb12">DoS/DDoS SaldÄ±rÄ±larÄ±</label>
+        <label class="box-close" for="acc-close"></label>
+        <div class="box-content">
+        <h4>Denial Of Service Nedir?</h4>
+        <h4>AmaÃ§larÄ± o DDoS/DoS Atak Ã‡eÅŸitleri</h4>
+        <h4>DNS Amflication</h4>
+        <h4>GET/POST Flood</h4>
+        <h4>SYN Flood </h4>
+        <h4>UDPFlood</h4>
+        <h4>DDOS AtaklarÄ± </h4>
+        <h4>DDOS Ã‡eÅŸitleri ve AraÃ§larÄ±</h4>
+        <h4>Ircbot â€“ zombie - BotNet KavramlarÄ±</h4>
+          
+    </section>
+    <input type="radio" name="accordion" id="cb13" />
+    <section class="box">
+        <label class="box-title" for="cb13">Web Uygulama GÃ¼venliÄŸi & SaldÄ±rÄ±larÄ± </label>
+        <label class="box-close" for="acc-close"></label>
+        <div class="box-content">
+        <h4>Web UygulamalarÄ± ve http</h4>
+        <h4>Http Protokol DetaylarÄ± </h4>
+        <h4>Hacking â€“ Defacement- Rooting- Shell vb </h4>
+        <h4>Web Uygulama/Site GÃ¼venliÄŸi Nelere BaÄŸlÄ±dÄ±r?</h4>
+        <h4>Web UygulamalarÄ±nda Hacking AmaÃ§lÄ± Bilgi Toplama</h4>
+        <h4>Web Sunucu</h4>
+        <h4>Uygulama Versiyon KeÅŸfi</h4>
+        <h4>Hata MesajlarÄ±ndan Bilgi Toplama</h4>
+        <h4>Google Kullanarak Bilgi Toplama </h4>
+        <h4>Alt Dizin ve Dosya KeÅŸfi</h4>
+        <h4>Admin Panel KeÅŸfi</h4>
+        <h4>XSS- CSRF Zafiyetleri</h4>
+        <h4>SQL Injection Zafiyetleri </h4>
+        <h4>Googleâ€™dan Otomatik SQLi AÃ§Ä±klÄ±ÄŸÄ± Arama</h4>
+        <h4>File Inclusion Zafiyetleri </h4>
+        <h4>Shell Ã‡eÅŸitleri ve KullanÄ±m AmaÃ§larÄ± </h4>
+        <h4>Shell KavramÄ± ve KullanÄ±mÄ±</h4>
+        <h4>Shell KavramÄ± ve KullanÄ±mÄ±</h4>
+        <h4>SÄ±k KullanÄ±lan Shell YazÄ±lÄ±mlarÄ±</h4>
+        <h4>Web Uygulama GÃ¼venlik Test YazÄ±lÄ±mlarÄ± </h4>
+        
+    </section>
+    <input type="radio" name="accordion" id="cb14" />
+    <section class="box">
+        <label class="box-title" for="cb14">ZararlÄ± YazÄ±lÄ±mlara GiriÅŸ ve Temel kavramlar </label>
+        <label class="box-close" for="acc-close"></label>
+        <div class="box-content">
+       <h4>Malware- Virus- Worm-Trojan-Spyware-Ransomware</h4>
+       <h4>FarklÄ± Tiplerde ZararlÄ± YazÄ±lÄ±mlarÄ±n OluÅŸturulmasÄ± </h4>
+       <h4>Shellter -Msfvenom KullanÄ±mÄ±</h4>
+       <h4>Android Telefonlara Uygun ZararlÄ± YazÄ±lÄ±mlarÄ±n OluÅŸturulmasÄ± </h4>
+       <h4>Dosya BirleÅŸtirmesi (Binder)</h4>
+        
+    </section>
+    <input type="radio" name="accordion" id="cb15" />
+    <section class="box">
+        <label class="box-title" for="cb15">Sosyal MÃ¼hendislik SaldÄ±rÄ±larÄ± </label>
+        <label class="box-close" for="acc-close"></label>
+        <div class="box-content">
+      <h4>Sosyal MÃ¼hendislik Nedir?  </h4>
+      <h4>Sosyal MÃ¼hendislik SaldÄ±rÄ±larÄ± NasÄ±l YapÄ±lÄ±r?</h4>
+      <h4>Sosyal MÃ¼hendislik SaldÄ±rÄ± Ã–rnekleri </h4>
+      <h4>Sosyal MÃ¼hendislik SaldÄ±rÄ±larÄ±nda Senaryo Kurgulama</h4>
+      <h4>GoPhish KullanÄ±mÄ±</h4>
+   
+    </section>
+    <input type="radio" name="accordion" id="cb16" />
+    <section class="box">
+        <label class="box-title" for="cb16">Kablosuz AÄŸ SaldÄ±rÄ±larÄ± </label>
+        <label class="box-close" for="acc-close"></label>
+        <div class="box-content">
+            <h4>Kablosuz AÄŸlara GiriÅŸ</h4>
+            <h4>KablosuzTanÄ±mlar </h4>
+            <h4>Kablosuz AÄŸ Ã‡eÅŸitleri</h4>
+            <h4>Kablosuz Aglarda Tehlikeler</h4>
+            <h4>Sahte Access Pointler ve ZararlarÄ± </h4>
+            <h4>WLAN keÅŸif yÃ¶ntemleri </h4>
+            <h4>KeÅŸif Teknikleri </h4>
+            <h4>Gizli SSID Tespiti</h4>
+            <h4>WEP/WPA/WPA2 SaldÄ±rÄ±larÄ±</h4>
+            <h4>Halka AÃ§Ä±k Kablosuz AÄŸlarda Tehlikeler</h4>
+            <h4>Kablosuz AÄŸlarda SaldÄ±rÄ± Tespit Sistemi KullanÄ±mÄ±</h4>
+    </section>
+
+
+
+    
+    </nav>
+</body>
+
+<head>
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://wallpapercave.com/wp/wp3833761.png");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .accordion {
+            /* Accordion stilleri */
+        }
+
+        /* DiÄŸer stiller */
+    </style>
+</head>
+
+<body>
+    <nav class="accordion">
+        <!-- Accordion iÃ§eriÄŸi -->
+    </nav>
+</body>
+
+</html>
